@@ -195,7 +195,7 @@ public class MultiImageView extends LinearLayout {
         @Override
         public void onClick(View view) {
             if (mOnItemClickListener != null) {
-                mOnItemClickListener.onItemClick(view, view.getTag() + "");
+                mOnItemClickListener.onItemClick(view, view.getTag()+"");
             }
         }
     };

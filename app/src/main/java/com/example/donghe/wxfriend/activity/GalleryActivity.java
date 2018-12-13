@@ -37,7 +37,6 @@ public class GalleryActivity extends AppCompatActivity implements ViewPager.OnPa
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_gallery);
 
         // 获取参数
@@ -52,7 +51,7 @@ public class GalleryActivity extends AppCompatActivity implements ViewPager.OnPa
         mViewPager.setOffscreenPageLimit(2);
         // 添加Adapter
         mViewPager.setAdapter(new SamplePagerAdapter());
-        mViewPager.setCurrentItem(0);
+        mViewPager.setCurrentItem(position);
         mViewPager.setOnPageChangeListener(this);
 
 

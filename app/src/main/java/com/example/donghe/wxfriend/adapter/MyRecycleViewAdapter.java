@@ -23,21 +23,14 @@ import com.example.donghe.wxfriend.bean.ListItemModle;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by dong.he on 2017/2/7.
- */
-
 public class MyRecycleViewAdapter extends RecyclerView.Adapter {
 
     private Context mContext;
     private List<ListItemModle> list;
-    private LayoutInflater mInflater;
     private ArrayList<String> images;
 
     public MyRecycleViewAdapter(Context mContext) {
-
         this.mContext = mContext;
-        mInflater = LayoutInflater.from(mContext);
     }
 
     public void setList(List<ListItemModle> list) {
